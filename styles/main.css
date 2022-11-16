@@ -1,0 +1,42 @@
+:root {
+    --colorA: #34374c;
+    --colorB: #2c2e3e;
+    --colorC: #ee2b47;
+    --colorD: #f6f6f6;
+}
+
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--colorA);
+    color: var(--colorD);
+    min-height: 100vh;
+}
+
+.round-border {
+    border-radius: 4px;
+    border: 1px solid var(--colorA);
+    box-shadow: 2px 2px 5px var(--colorB), inset 4px 4px 16px var(--colorA);
+}
+
+#side {
+    background-color: var(--colorB);
+    height: calc(100% - 1em);
+    left: -30%;
+    margin: 0.5em;
+    position: absolute;
+    width: 25%;
+    transition: left 1s;
+}
+
+#side-icon {
+    margin: 1em 1.5em;
+    position: absolute;
+    width: 2em;
+    transition: filters 1s;
+    visibility: hidden;
+}
